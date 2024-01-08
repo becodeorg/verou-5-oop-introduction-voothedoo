@@ -45,9 +45,7 @@ class Beer extends Beverage
 
   public function __construct(string $color, float $price, string $name, float $alcoholPercentage, string $temperature = 'cold')
   {
-    $this->color = $color;
-    $this->price = $price;
-    $this->temperature = $temperature;
+    parent::__construct($color, $price, $temperature);
     $this->name = $name;
     $this->alcoholPercentage = $alcoholPercentage;
   }
