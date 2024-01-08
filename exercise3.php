@@ -21,9 +21,9 @@ USE TYPEHINTING EVERYWHERE!
 
 class Beverage
 {
-  public $color;
-  public $price;
-  public $temperature;
+  private $color;
+  private $price;
+  private $temperature;
 
   public function __construct(string $color, float $price, string $temperature = 'cold')
   {

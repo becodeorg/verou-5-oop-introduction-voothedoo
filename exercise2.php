@@ -22,10 +22,6 @@ class Beverage
   }  
 }
 
-$cola = new Beverage("black",2);
-
-
-// print_r($cola->getInfo());
 
 /*
 TODO: Make class beer that extends from Beverage.
@@ -67,8 +63,7 @@ $duvel = new Beer("blonde", 3.5, "Duvel", 8.5);
 print_r($duvel->getAlcoholPercentage());
 echo "<br>";
 print_r($duvel->alcoholPercentage);
-print_r($duvel->getInfo());
 
-$cola = new Beverage("black", 2);
-print_r($cola->getAlcoholPercentage());
+// $cola = new Beverage("black", 2);
+// print_r($cola->getAlcoholPercentage());
 
