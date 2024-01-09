@@ -13,6 +13,7 @@ Use typehinting everywhere!
 */
 
 define("BARNAME" , "Het Vervolg");
+echo BARNAME;
 
 class Beverage
 {
@@ -46,6 +47,10 @@ class Beverage
   }
 
 }
+
+$cola = new Beverage("black",2);
+echo "<br>";
+echo $cola->returnBeverageBarname();
 
 
 class Beer extends Beverage
@@ -86,9 +91,12 @@ class Beer extends Beverage
   }
 }
 
+$duvel = new Beer("blonde", 3.5, "Duvel", 8.5);
+echo "<br>";
+echo $duvel->returnBeerBarname();
 
 echo "<br>";
 echo Beverage::returnAddress();
 
 echo "<br>";
-print_r(Beverage::returnAddress());
+echo $duvel->returnAddress();
