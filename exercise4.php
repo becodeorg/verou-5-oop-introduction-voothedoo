@@ -52,3 +52,4 @@ $duvel = new Beer("blonde", 3.5, "Duvel", 8.5);
 
 print_r($duvel->getAlcoholPercentage());
 echo "<br>";
+echo $duvel->getAlcoholPercentage();
